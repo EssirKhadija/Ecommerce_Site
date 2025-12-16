@@ -202,6 +202,53 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Section Map Google Maps */}
+      <div className="row mt-4">
+        <div className="col-12">
+          <div className="map-container">
+            <h3 className="map-title">
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Notre emplacement
+            </h3>
+            <div className="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.5987464996344!2d-8.008181684879363!3d31.634674981321494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2zR3XDqWxpeg!5e0!3m2!1sfr!2sma!4v1234567890123!5m2!1sfr!2sma"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Carte de localisation Marrakech"
+              ></iframe>
+            </div>
+            <div className="map-info">
+              <div className="map-info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Quartier Guéliz, Marrakech, Maroc</span>
+              </div>
+              <a 
+                href="https://www.google.com/maps/dir//Gu%C3%A9liz,+Marrakech/@31.6346758,-8.0081817,17z" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="btn btn-primary btn-directions"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
+                </svg>
+                Obtenir l'itinéraire
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

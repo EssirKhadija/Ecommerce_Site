@@ -2187,3 +2187,125 @@ footer {
 @keyframes bounce {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.2); }}
+
+
+
+  /* 🛒 Style pour l'icône panier dans le menu */
+.cart-link {
+  display: flex !important;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600 !important;
+  transition: var(--transition);
+}
+
+.cart-icon {
+  transition: var(--transition);
+}
+
+.cart-link:hover .cart-icon {
+  transform: scale(1.1);
+  color: var(--primary);
+}
+
+.cart-link .badge {
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* 🗺️ CARTE GOOGLE MAPS DANS CONTACT */
+.map-container {
+  background: white;
+  border-radius: var(--radius);
+  padding: 2rem;
+  box-shadow: var(--shadow-lg);
+  margin-top: 2rem;
+}
+
+.map-title {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--dark);
+}
+
+.map-title svg {
+  color: var(--primary);
+}
+
+.map-wrapper {
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.map-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  z-index: 1;
+}
+
+.map-wrapper iframe {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius);
+}
+
+.map-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: var(--gray-50);
+  border-radius: 10px;
+}
+
+.map-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  color: var(--gray-700);
+  font-weight: 600;
+}
+
+.map-info-item svg {
+  color: var(--primary);
+  flex-shrink: 0;
+}
+
+.btn-directions {
+  padding: 0.8rem 1.5rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .map-info {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .map-info-item {
+    justify-content: center;
+  }
+  
+  .btn-directions {
+    width: 100%;
+  }
+}
