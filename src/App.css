@@ -1,0 +1,17 @@
+/* App Component Styles */
+.App {
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.App-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.App-content {
+  flex: 1;
+  background: #ffffff;
+}
